@@ -1,33 +1,39 @@
 import React from 'react'
-import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardMedia, CardContent, CardHeader, CardActionArea, Divider } from "@mui/material";
+import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardMedia, CardContent, CardHeader, CardActionArea, Divider, ListItemIcon, ListItemText } from "@mui/material";
+import CircleIcon from '@mui/icons-material/Circle';
+import siedmanProfile from './assets/asu-seidman-institute.png'
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import nsutIcon from './assets/Netaji_Subhas_University_of_Technology.svg.png'
 
 function Work() {
     return(
-    <Box>
+    <Box ml={4} sx={{fontFamily: "Lato"}}>
       <Typography variant="h4" sx={{fontFamily: 'Lato', fontWeight: 'bold'}} mt = {4} ml={2} mb={1}>
         Work Experience:
       </Typography>
-      <Card>
+      <Card variant='outlined' sx={{width: 500, marginTop: '2em', marginLeft: '2em'}}>
+        <CardMedia component="img" image={siedmanProfile}/>
         <CardContent>
-          <Typography>Programming Technician</Typography>
-          <Typography>WP Carey Seidman Research Institute</Typography>
-          <Typography>Jan 2024-Ongoing</Typography>
+          <Typography variant='h6' sx={{fontWeight: 'bold'}}>Programming Technician</Typography>
+          <Typography color='text.secondary'>WP Carey Seidman Research Institute</Typography>
+          <Typography variant='body2'>Jan 2024-Ongoing</Typography>
           <Typography>Tempe, AZ</Typography>
           <List>
             <ListItem>
-              -Manage deployments of https://seidmaninstitute.com/ and https://ncisouthwest.org/
+                <ListItemText primary="Manage deployments of https://seidmaninstitute.com/ and https://ncisouthwest.org/"/>
             </ListItem>
             <ListItem>
-              -Extract data from the Bureau of Labor Statistics for calculating job growth
+                <ListItemText primary="Extract data from the Bureau of Labor Statistics for calculating job growth"/>
             </ListItem>
           </List>
         </CardContent>
       </Card>
-      <Card>
+      <Card variant='outlined' sx={{width: 500, height: 300, marginTop: '2em', marginLeft: '2em'}} >
+        <CardMedia component="img" image={nsutIcon} sx={{height: 100}}/>
         <CardContent>
-          <Typography>Research Intern</Typography>
-          <Typography>Netaji Subhas Institute of Technology</Typography>
-          <Typography>Feb 2022-March 2022</Typography>
+          <Typography variant='h6' sx={{fontWeight: 'bold'}}>Research Intern</Typography>
+          <Typography color="text.secondary">Netaji Subhas Institute of Technology</Typography>
+          <Typography variant='body2'>Feb 2022-March 2022</Typography>
           <Typography>New Delhi, India</Typography>
           <List>
             <ListItem>

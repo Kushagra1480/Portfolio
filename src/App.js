@@ -8,6 +8,7 @@ import Education from "./Education";
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 
+
 function App() {
   return (
     <Box>
@@ -48,8 +49,10 @@ function App() {
           </Grid>
         </Grid>
       </Grid>
-      <Work />
-      <Education />
+      <Grid container spacing={9}>
+        <Grid item><Work /></Grid>
+        <Grid item><Education /></Grid>
+      </Grid>
       <Box>
         <Typography variant="h4" sx={{fontFamily: 'Lato', fontWeight: 'bold'}} mt = {4} ml={2} mb={1}>
           Documents:
