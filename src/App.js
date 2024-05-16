@@ -1,4 +1,4 @@
-import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardMedia, CardContent, CardHeader, CardActionArea, Divider, ListItemIcon, ListItemText } from "@mui/material";
+import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardMedia, CardContent, CardHeader, CardActionArea, Divider, ListItemIcon, ListItemText, Button } from "@mui/material";
 import displayPicture from './assets/IMG_6081.jpg'
 import asuLogo from './assets/ASU-logo.webp'
 import seidmanPreview from './assets/Screenshot 2024-05-15 045704.png'
@@ -53,18 +53,16 @@ function App() {
         <Grid item><Work /></Grid>
         <Grid item><Education /></Grid>
       </Grid>
-      <Box>
+      <Box ml={4}>
         <Typography variant="h4" sx={{fontFamily: 'Lato', fontWeight: 'bold'}} mt = {4} ml={2} mb={1}>
           Documents:
         </Typography>
         <List>
           <ListItem>
-            <ListItemIcon><WorkIcon /></ListItemIcon>
-            <ListItemText primary="Resume"/>
+            <Button variant="outlined" size="large" startIcon={<WorkIcon />}>Resume</Button>
           </ListItem>
           <ListItem>
-            <ListItemIcon><SchoolIcon /></ListItemIcon>
-            <ListItemText primary="Transcript"/>
+            <Button variant="outlined" size="large" startIcon={<SchoolIcon />}>Transcript</Button>
           </ListItem>
         </List>
       </Box>

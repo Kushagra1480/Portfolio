@@ -11,8 +11,8 @@ function Education() {
                 <CardContent>
                     <Typography variant='h6' sx={{fontWeight: 'bold'}}>Master's of Science</Typography>
                     <Typography color='text.secondary'>Software Engineering</Typography>
-                    <Typography variant='body2'>Arizona State University</Typography>
-                    <Typography>Aug 2023-May 2025(Expected)</Typography>
+                    <Typography variant='body1'>Arizona State University</Typography>
+                    <Typography variant='body2'>Aug 2023-May 2025(Expected)</Typography>
                     <Typography>Tempe, AZ</Typography>
                 </CardContent>
                 </Card>
@@ -20,8 +20,8 @@ function Education() {
                 <CardContent>
                     <Typography variant='h6' sx={{fontWeight: 'bold'}}>Bachelor of Science</Typography>
                     <Typography color='text.secondary'>Information Technology</Typography>
-                    <Typography variant='body2'>Netaji Subhas Institute of Technology</Typography>
-                    <Typography>Aug 2019-May 2023</Typography>
+                    <Typography variant='body1'>Netaji Subhas Institute of Technology</Typography>
+                    <Typography variant='body2'>Aug 2019-May 2023</Typography>
                     <Typography>New Delhi, India</Typography>
                 </CardContent>
             </Card>
