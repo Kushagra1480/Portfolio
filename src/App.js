@@ -1,4 +1,4 @@
-import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardMedia, CardContent, CardHeader, CardActionArea, Divider, ListItemIcon, ListItemText, Button } from "@mui/material";
+import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardMedia, CardContent, CardHeader, CardActionArea, Divider, ListItemIcon, ListItemText, Button, Link } from "@mui/material";
 import displayPicture from './assets/IMG_6081.jpg'
 import asuLogo from './assets/ASU-logo.webp'
 import seidmanPreview from './assets/Screenshot 2024-05-15 045704.png'
@@ -7,6 +7,9 @@ import Work from "./Work";
 import Education from "./Education";
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 
 
 function App() {
@@ -25,7 +28,11 @@ function App() {
             variant="h3" 
             mr={4} 
             sx={{fontFamily: "Lato", fontWeight: 'bold'}}>
-          Kushagra Kartik</Typography>
+            Kushagra Kartik 
+            <Link href="https://www.linkedin.com/in/kushagra-kartik/"><LinkedInIcon fontSize="large"/></Link>
+            <Link color="inherit" href="https://github.com/Kushagra1480"><GitHubIcon fontSize="large"/></Link>
+          </Typography>
+          
           <Grid container spacing={0}>
             <Grid item>
               <Typography variant="h6" mt={4} sx={{fontFamily: "Lato"}}>
@@ -53,16 +60,14 @@ function App() {
         <Grid item><Work /></Grid>
         <Grid item><Education /></Grid>
       </Grid>
-      <Box ml={4}>
-        <Typography variant="h4" sx={{fontFamily: 'Lato', fontWeight: 'bold'}} mt = {4} ml={2} mb={1}>
-          Documents:
-        </Typography>
+      <Box ml={4} mt={4} sx={{fontFamily: "Lato"}}>
+        <Typography variant="h4" sx={{fontWeight: "bold"}}>Contact Me:</Typography>
         <List>
           <ListItem>
-            <Button variant="outlined" size="large" startIcon={<WorkIcon />}>Resume</Button>
+            <ListItemText primary="kushagrakartik1480@gmail.com"/>
           </ListItem>
           <ListItem>
-            <Button variant="outlined" size="large" startIcon={<SchoolIcon />}>Transcript</Button>
+            <ListItemText primary="6022181122"/>
           </ListItem>
         </List>
       </Box>
