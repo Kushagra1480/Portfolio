@@ -3,7 +3,7 @@ import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardM
 
 function Work() {
     return(
-        <Box>
+    <Box>
       <Typography variant="h4" sx={{fontFamily: 'Lato', fontWeight: 'bold'}} mt = {4} ml={2} mb={1}>
         Work Experience:
       </Typography>

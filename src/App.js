@@ -1,10 +1,12 @@
-import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardMedia, CardContent, CardHeader, CardActionArea, Divider } from "@mui/material";
+import { Avatar, Box, Grid, List, ListItem, Stack, Typography, Item, Card, CardMedia, CardContent, CardHeader, CardActionArea, Divider, ListItemIcon, ListItemText } from "@mui/material";
 import displayPicture from './assets/IMG_6081.jpg'
 import asuLogo from './assets/ASU-logo.webp'
 import seidmanPreview from './assets/Screenshot 2024-05-15 045704.png'
 import nciPreview from './assets/Screenshot 2024-05-15 045850.png'
 import Work from "./Work";
 import Education from "./Education";
+import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from '@mui/icons-material/Work';
 
 function App() {
   return (
@@ -48,6 +50,21 @@ function App() {
       </Grid>
       <Work />
       <Education />
+      <Box>
+        <Typography variant="h4" sx={{fontFamily: 'Lato', fontWeight: 'bold'}} mt = {4} ml={2} mb={1}>
+          Documents:
+        </Typography>
+        <List>
+          <ListItem>
+            <ListItemIcon><WorkIcon /></ListItemIcon>
+            <ListItemText primary="Resume"/>
+          </ListItem>
+          <ListItem>
+            <ListItemIcon><SchoolIcon /></ListItemIcon>
+            <ListItemText primary="Transcript"/>
+          </ListItem>
+        </List>
+      </Box>
     </Box>
   );
 }

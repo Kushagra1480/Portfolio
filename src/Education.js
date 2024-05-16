@@ -5,35 +5,24 @@ function Education() {
     return(
         <Box>
         <Typography variant="h4" sx={{fontFamily: 'Lato', fontWeight: 'bold'}} mt = {4} ml={2} mb={1}>
-          Work Experience:
+          Education:
         </Typography>
         <Card>
           <CardContent>
-            <Typography>Programming Technician</Typography>
-            <Typography>WP Carey Seidman Research Institute</Typography>
-            <Typography>Jan 2024-Ongoing</Typography>
+            <Typography>Master's of Science</Typography>
+            <Typography>Software Engineering</Typography>
+            <Typography>Arizona State University</Typography>
+            <Typography>Aug 2023-May 2025(Expected)</Typography>
             <Typography>Tempe, AZ</Typography>
-            <List>
-              <ListItem>
-                -Manage deployments of https://seidmaninstitute.com/ and https://ncisouthwest.org/
-              </ListItem>
-              <ListItem>
-                -Extract data from the Bureau of Labor Statistics for calculating job growth
-              </ListItem>
-            </List>
           </CardContent>
         </Card>
         <Card>
           <CardContent>
-            <Typography>Research Intern</Typography>
+            <Typography>Bachelor of Science</Typography>
+            <Typography>Information Technology</Typography>
             <Typography>Netaji Subhas Institute of Technology</Typography>
-            <Typography>Feb 2022-March 2022</Typography>
+            <Typography>Aug 2019-May 2023</Typography>
             <Typography>New Delhi, India</Typography>
-            <List>
-              <ListItem>
-                Worked on dataset creation and cleaning for a sentiment analysis model.
-              </ListItem>
-            </List>
           </CardContent>
         </Card>
       </Box>
