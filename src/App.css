@@ -6,9 +6,15 @@ body {
 .App {
   font-family: 'Tahoma';
 }
+.App h2{
+  color: white;
+  font-weight: 100;
+  text-align: left;
+  margin-bottom: -40px;
+}
 .navbar {
   background: rgb(50,67,99);
-background: linear-gradient(90deg, rgba(50,67,99,1) 0%, rgba(63,118,222,1) 30%, rgba(39,76,145,1) 85%);
+  background: linear-gradient(90deg, rgba(50,67,99,1) 0%, rgba(63,118,222,1) 30%, rgba(39,76,145,1) 85%);
   margin-top: 50px;
   margin: 50px 300px 0px 300px;
 }
@@ -47,6 +53,7 @@ background: linear-gradient(90deg, rgba(50,67,99,1) 0%, rgba(63,118,222,1) 30%, 
   margin: 0;
   padding: 0;
   overflow: hidden;
+  margin-left: -10px;
 }
 
 .breadcrumb li {
@@ -85,4 +92,98 @@ background: linear-gradient(90deg, rgba(50,67,99,1) 0%, rgba(63,118,222,1) 30%, 
   color: #706f6d;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.main-content {
+  margin: 50px 300px 0px 300px;
+}
+
+.slideshow-image {
+  width: 600px;
+  height: 400px;
+  animation: fade 2s ease-in-out ;
+}
+
+/* .image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 770px;
+}
+
+.image-preview::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+
+.image-preview img {
+  flex: 0 0 25%;
+  max-width: 150px;
+  height: 75px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.image-preview img.active {
+  border: 4px solid white;
+  height: 66px;
+} */
+.image-preview {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.image-preview img {
+  flex: 0 0 25%;
+  max-width: 150px;
+  height: 75px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.image-preview img.active {
+  border: 4px solid white;
+  height: 66px;
+}
+
+.image-carousel img.fading-in {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-out;
+
+}
+
+.kush-image {
+  width: 300px;
+  height: 200px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: -120px;
+}
+
+.about-section {
+  transform: translate(-285px, -70px);
+  width: 200px;
+}
+
+.about-section p {
+  margin-top: 5px;
+  color: #c4c6df;
+  font-size: 13px;
 }
