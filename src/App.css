@@ -51,6 +51,7 @@ main ul.navigation li:before {
   width: 100%;
   z-index: 0;
 }
+
 .navigation li a {
   position: relative;
   z-index: 1;
@@ -323,16 +324,19 @@ footer {
   box-shadow: 4px 4px rgba(0, 0, 0, 0.08);
 }
 .bottom-text h1 {
-  color: #4E5050;
+  color: #9B9B9B;
   font-weight: 900;
 }
 
 .bottom-text .time {
+  color: #9B9B9B;
   font-family: 'Seven Segment', sans-serif;
   font-size: 55px;
+  letter-spacing: 10px;
 }
 
 .time span {
   font-family: 'Wii', sans-serif;
   font-size: 20px;
+  letter-spacing: 2px;
 }

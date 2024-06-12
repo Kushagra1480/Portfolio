@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import asuLogo from './assets/ASU-logo.webp';
-import one from './assets/time/1.png';
+
 
 const App = () => {
   const [currentTime, setCurrentTime] = useState(null)
@@ -76,16 +75,23 @@ const App = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#container-3"><img src="https://64.media.tumblr.com/4acf7d6703348eb3de2d6f422eac02b8/d28e227eb623ad41-cc/s1280x1920/89820b9bf56d7d7e0448b940fa4727a5a32129dc.jpg" alt="wii shop channel" /></a>
+                    <a href="https://github.com/Kushagra1480">
+                        <img src="https://raw.githubusercontent.com/gist/theAdityaNVS/f5b585d1082da2dffffea32434f37956/raw/7f9552d0a179b4f84059259fa878199e369b069c/GitHub-logo.gif" alt="github" style={{backgroundColor:"white"}}/></a>
                 </li> 
 
                 <li>
-                    <a href="https://eggdesign.tumblr.com"><img src="https://64.media.tumblr.com/28ae4ac4079501d6efa5fc5518588e69/d28e227eb623ad41-a4/s1280x1920/3d4522bda6043bf90af3a0114e79038863c79b85.pnj" alt="check mii out channel" /></a>
+                    <a href="https://eggdesign.tumblr.com">
+                    <img src="https://media.licdn.com/dms/image/C4D22AQHl3qJ1B9tfrg/feedshare-shrink_2048_1536/0/1676985042381?e=2147483647&v=beta&t=wDFyLeR5up3VcGfOpD_e8hKBbqSdbnp9l0c1RMqdiy4" alt="leetcode" style={{backgroundColor:"white"}}/></a>
                 </li>
                
                 <li>
+                    <a href="https://www.linkedin.com/in/kushagra-kartik/"> 
+                        <img src ="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/latest-linked-logo.gif" />
+                    </a>
                 </li>
-                <li></li>
+                <li style={{objectFit:"cover"}}>
+                    <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"200px", marginTop:"-40px"}}/>
+                </li>
                 <li></li>
                 <li></li>
                 <li></li>
