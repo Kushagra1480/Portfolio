@@ -7,6 +7,7 @@ body {
   margin: 0;
   background: #f8f8f8;
   font-family: "wii", sans-serif;
+  cursor: url('./assets/pointer.png'), auto;
 }
 * {
   box-sizing: border-box;
@@ -14,6 +15,9 @@ body {
 a {
   text-decoration: none;
   color: #222;
+}
+a:hover { 
+  cursor: url('./assets/pointer.png'), auto;
 }
 main ul.navigation {
   display: flex;
