@@ -326,3 +326,8 @@ footer {
   color: #4E5050;
   font-weight: 900;
 }
+
+.bottom-text .time {
+  font-family: 'Seven Segment', sans-serif;
+  font-size: 55px;
+}

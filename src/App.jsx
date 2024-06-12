@@ -1,18 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import asuLogo from './assets/ASU-logo.webp';
+import one from './assets/time/1.png';
 
 const App = () => {
+  const [currentTime, setCurrentTime] = useState(null)
   const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']
-  const today = new Date();
-  const day = today.getDate().toString().padStart(2, '0')
-  const dayOfWeek = days[today.getDay()]
-  const month = (today.getMonth() + 1).toString().padStart(2, '0')
-  const hours = today.getHours().toString().padStart(2, '0')
-  const minutes = today.getMinutes().toString().padStart(2, '0')
-  const formattedTime = `${hours}:${minutes}`
-  const formattedDate = `${dayOfWeek} ${day}/${month}`;
-  console.log(formattedTime)
+  useEffect(() => {
+    const updateClock = () => {
+      const today = new Date();
+      const hours = today.getHours();
+      const minutes = today.getMinutes().toString().padStart(2, '0');
+      const day = today.getDate().toString().padStart(2, '0');
+      const month = (today.getMonth() + 1).toString().padStart(2, '0');
+      const dayOfWeek = days[today.getDay()]
+      let formattedHours;
+      let isPM = false;
+
+      if (hours >= 12) {
+        formattedHours = (hours - 12) % 12;
+        isPM = true;
+      } else {
+        formattedHours = hours % 12;
+      }
+
+      const formattedTime = `${formattedHours}:${minutes}`;
+      const formattedDate = `${dayOfWeek} ${day}/${month}`;
+
+      setCurrentTime({ formattedTime, isPM, formattedDate });
+    };
+
+    // Initial update
+    updateClock()
+
+    // Update time and date every second
+    const intervalId = setInterval(updateClock, 1000) // Update every 1 second
+
+    // Cleanup function to clear the interval when the component unmounts
+    return () => clearInterval(intervalId)
+  }, []);
   const numberSprites = {
     1: './assets/time/1.png',
     2: './assets/time/2.png',
@@ -27,7 +53,14 @@ const App = () => {
     am: './assets/time/am.png',
     pm: './assets/time/pm.png',
   }
-
+  const renderDigit = (digit) => {
+    const spritePath = numberSprites[digit];
+    console.log(spritePath)
+    if (spritePath) {
+      return <img src={spritePath} alt={digit} key={digit} />; // Add key prop for performance
+    }
+    return null;
+  }
   return (
     <body>
         <main>
@@ -104,10 +137,14 @@ const App = () => {
                     <a href="#" class="cancel">Cancel</a>
                 </div>
             </div>
+            
         </main>
         
         <div class="bottom-text">
-            <h1>{formattedDate}</h1>
+            <h1 className='time'>
+                {currentTime?.formattedTime} {currentTime?.isPM ? 'PM' : 'AM'}
+            </h1>
+            <h1>{currentTime?.formattedDate}</h1>
         </div>
         <footer>
             <div class="button-cont">
