@@ -89,15 +89,27 @@ const App = () => {
                         <img src ="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/latest-linked-logo.gif" />
                     </a>
                 </li>
-                <li style={{objectFit:"cover"}}>
-                    <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"200px", marginTop:"-40px"}}/>
+                <li>
+                    <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
+                </li>
+                <li>
+                <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
+                </li>
+                <li>
+                <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
+                </li>
+                <li>
+                <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
+                </li>
+                <li>
+                <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
+                </li>
+                <li>
+                <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
+                </li>
             </ul>
             <div id="container-1" class="content full">
                 <div class="container">
@@ -165,7 +177,9 @@ const App = () => {
             <div class="button-cont right-side">
                 <a class="button" href="/ask">
                     <span class="corner"></span>
-                    <span class="text">Ask</span>
+                    <span class="text">
+                        <a href='mailto:kushagrakartik1480@gmail.com'><img src='https://cdn3d.iconscout.com/3d/premium/thumb/gmail-11382933-9148198.png?f=webp' style={{width:"85px", height:"85px"}}/></a>
+                        </span>
                 </a>
             </div>
         </footer>
