@@ -331,3 +331,8 @@ footer {
   font-family: 'Seven Segment', sans-serif;
   font-size: 55px;
 }
+
+.time span {
+  font-family: 'Wii', sans-serif;
+  font-size: 20px;
+}

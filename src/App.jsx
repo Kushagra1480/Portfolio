@@ -142,7 +142,7 @@ const App = () => {
         
         <div class="bottom-text">
             <h1 className='time'>
-                {currentTime?.formattedTime} {currentTime?.isPM ? 'PM' : 'AM'}
+                {currentTime?.formattedTime} <span>{currentTime?.isPM ? 'PM' : 'AM'}</span>
             </h1>
             <h1>{currentTime?.formattedDate}</h1>
         </div>
