@@ -159,7 +159,7 @@ const App = () => {
         </main>
         
         <div class="bottom-text">
-            <h1 className='time'>
+            <h1 className='time' >
                 {currentTime?.formattedTime} <span>{currentTime?.isPM ? 'PM' : 'AM'}</span>
             </h1>
             <h1>{currentTime?.formattedDate}</h1>
@@ -168,7 +168,7 @@ const App = () => {
             <div class="button-cont">
                 <a class="button" href="/">
                     <span class="corner"></span>
-                    <span class="text">Home</span>
+                    <span class="text">About</span>
                 </a>
             </div>
             <div class="c"></div>
