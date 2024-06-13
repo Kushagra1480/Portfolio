@@ -309,6 +309,9 @@ footer {
   display: flex;
   align-items: center;
 }
+.button-cont:hover{
+  box-shadow: 2px 2px 20px 2px skyblue;
+}
 .button-cont.right-side {
   left: auto;
   right: -40px;

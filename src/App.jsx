@@ -64,12 +64,12 @@ const App = () => {
     <body>
         <main>
             <ul class="navigation">
-                <li>
+                <li className='channel'>
                     <a href="#container-1">
                         <img src="https://64.media.tumblr.com/57cf461a1819e5f240894118d1d0c568/d662040e3a2b8722-26/s400x600/c04c16872971599bb3c749bfa29c7d561c736247.pnj" alt="empty CD wii menu placeholder" />
                     </a>
                 </li>
-                <li>
+                <li className='channel'>
                     <a href="#container-2">
                         <img src="https://64.media.tumblr.com/077b3fa310d0f638c9cc671af80131dc/d662040e3a2b8722-93/s400x600/20eca28477dbe64b8dfc42898ffc8b7e9d7098b2.pnj" alt="mii background image" />
                     </a>
@@ -115,16 +115,20 @@ const App = () => {
                 <div class="container">
                     <header></header>
                     <div class="wii">
-                        Wii menu content
+                    <h3 style={{marginLeft:"-400px"}}>Hey!</h3>
+                    <h4>I'm Kushagra, a software engineering grad stuent at ASU</h4>
+                    <h4 style={{marginLeft:"-100px"}}>Languages- C/C++, Java, Javascript, Python</h4>
+                    <h4 style={{marginLeft:"-40px"}}>Technologies- Git, Docker, JUnit, React, Springboot</h4>
+                    <h4 style={{marginLeft:"-340px"}}>Contact me at:</h4>
+                    <h4 style={{marginLeft:"-200px"}}>Mobile: +1(602) 602-2181122</h4>
+                    <h4 style={{marginLeft:"-140px"}}>Email: Kushagrakartik1480@gmail.com</h4>
                     </div>
                     <div class="bottom">
                         <a href="#" class="button">
-                            <span class="corner"></span>
+                            <span class="corner">
+                                
+                            </span>
                             <span class="text">Back</span>
-                        </a>
-                        <a href="" class="button">
-                            <span class="corner"></span>
-                            <span class="text">???</span>
                         </a>
                     </div>
                 </div>
@@ -166,7 +170,7 @@ const App = () => {
         </div>
         <footer>
             <div class="button-cont">
-                <a class="button" href="/">
+                <a class="button" href="#container-1">
                     <span class="corner"></span>
                     <span class="text">About</span>
                 </a>
