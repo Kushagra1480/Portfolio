@@ -80,7 +80,7 @@ const App = () => {
                 </li> 
 
                 <li>
-                    <a href="https://eggdesign.tumblr.com">
+                    <a href="https://leetcode.com/u/kushagra1480/">
                     <img src="https://media.licdn.com/dms/image/C4D22AQHl3qJ1B9tfrg/feedshare-shrink_2048_1536/0/1676985042381?e=2147483647&v=beta&t=wDFyLeR5up3VcGfOpD_e8hKBbqSdbnp9l0c1RMqdiy4" alt="leetcode" style={{backgroundColor:"white"}}/></a>
                 </li>
                
