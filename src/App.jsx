@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-
 const App = () => {
+  const project_1 = "https://imgur.com/a/24T2UVw"
   const [currentTime, setCurrentTime] = useState(null)
   const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']
   useEffect(() => {
@@ -90,10 +90,14 @@ const App = () => {
                     </a>
                 </li>
                 <li>
-                    <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
+                    <a href = "https://github.com/kkartik12/SER516-Team-Denver">
+                        <img src="https://i.imgur.com/AtTbBba.png"/>
+                    </a>
                 </li>
                 <li>
-                <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
+                    <a href='https://github.com/Kushagra1480/blackjack'>
+                <img src='https://i.imgur.com/ZHCBowG.png'/>
+                    </a>
                 </li>
                 <li>
                 <img src='https://media.tenor.com/irSeFQ2poOYAAAAi/wii-channel-static-empty-wii-channel.gif' style={{width:"360px", height:"215px", marginTop:"-42px"}}/>
